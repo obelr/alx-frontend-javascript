@@ -12,19 +12,19 @@ interface Directors extends Teacher {
 }
 
 const teacher1: Teacher = {
-    firstName: 'Frank',
-    lastName: 'Donald',
+    firstName: 'Endale',
+    lastName: 'solomn',
     fullTimeEmployee: true,
-    location: 'New Jersey',
+    location: 'Mekele',
     contract: false,
 }
 
 console.log(teacher1);
 
 const director1: Directors = {
-    firstName: 'John',
-    lastName: 'Smith',
-    location: 'America',
+    firstName: 'Sofanit',
+    lastName: 'alemu',
+    location: 'Addis Ababa',
     fullTimeEmployee: true,
     numberOfReports: 17,
   };
@@ -37,7 +37,7 @@ interface printTeacherFunction {
 
 export const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => `${firstName[0]}. ${lastName}`;
 
-console.log(printTeacher('john', 'doe'));
+console.log(printTeacher('sofanit', 'alemu'));
 
 interface StudentClassInterface {
     firstName: string;
@@ -70,5 +70,5 @@ function createStudent(cStudent: StudentClassConstructorInterface, firstName: st
     return new cStudent(firstName, lastName);
 }
 
-const student1 = createStudent(StudentClass, 'mike', 'tyson');
+const student1 = createStudent(StudentClass, 'selam', 'tesfaye');
 console.log(student1);
